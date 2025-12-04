@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Get in touch for collaboration, inquiries, opportunities, or networking. Contact form and communication links available.">
+        <meta name="keywords" content="contact, connect, email, inquiry, message, reach out, portfolio contact">
+        <meta name="author" content="Prerana Pradhan">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Contact — Prerana</title>
+
+        <link rel="resetsheet" href="../css/reset.css">
+        <link rel="normalizesheet" href="../css/normalize.css">
+
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <h1>Contact</h1>
+            <nav>
+            <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="contact-form">
+                <h2>Get in Touch</h2>
+
+                <form action="mailto:pprad186@mtroyal.ca" method="post" enctype="text/plain" class="contact-form" >
+                    <!-- Salutation -->
+                    <div class="form-group full">
+                        <label>*Salutation:</label>
+                        <div class="options">
+                            <label><input type="radio" name="salutation" value="Mr." required> Mr</label>
+                            <label><input type="radio" name="salutation" value="Miss"> Miss</label>
+                            <label><input type="radio" name="salutation" value="Mrs."> Mrs.</label>
+                        </div>
+                    </div>
+
+                    <!-- First Name -->
+                    <div class="form-group">
+                        <label for="fname">*First Name:</label>
+                        <input type="text" id="fname" name="firstName" pattern="[A-Za-z\s\-']+" required>
+                    </div>
+
+                    <!-- Last Name -->
+                    <div class="form-group">
+                        <label for="lname">*Last Name:</label>
+                        <input type="text" id="lname" name="lastName" pattern="[A-Za-z\s\-']+" required>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">*Phone number:</label>
+                        <input type="tel" id="phone" name="phoneNumber"
+                            placeholder="123-456-7890"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="userEmail">*Email:</label>
+                        <input type="email" id="userEmail" name="emailAddress"
+                            placeholder="youremail@mail.com"
+                            required>
+                    </div>
+
+                    <!-- Contact method -->
+                    <div class="form-group full">
+                        <label>*Preferred Contact Method:</label>
+                        <div class="options">
+                            <label><input type="checkbox" name="contactMethod" value="text"> Text Message</label>
+                            <label><input type="checkbox" name="contactMethod" value="mail"> Email</label>
+                        </div>
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="form-group full">
+                        <label for="subject">*Subject:</label>
+                        <input type="text" id="subject" name="emailSubject" required>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group full">
+                        <label for="message">*Message:</label>
+                        <textarea id="message" name="contactMessage" rows="6" required></textarea>
+                    </div><br>
+
+                    <!-- Buttons -->
+                    <div class="form-actions full">
+                        <label class="consent"><input type="checkbox" required> I consent to my information being used to reply.</label><br>
+                        <button type="submit">Send message</button>
+                        <button type="reset" value="Reset" class="btn reset">Reset</button>
+                    </div> 
+                </form>
+
+                <p class="alt-contact">Or send an email to <a href="mailto:pprad186@mtroyal.ca">pprad186@mtroyal.ca</a></p>
+            </section>
+            <p class="back-top-fancy"><a href="#top">Back to top</a></p>
+        </main>
+            
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a href="mailto:pprad186@mtroyal.ca">Email</a>
+                <a href="projects.html">Projects</a>
+                <a href="art.html">Art</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="../index.html">Home</a>
+                <a href="resume.html">Resume</a>
+            </div>
+
+            <p class="footer-tagline">Made with love and creativity — Kathmandu → Calgary</p>
+            <p>&copy; 2025 Prerana Pradhan</p>
+        </footer>
+    </body>
+</html>
