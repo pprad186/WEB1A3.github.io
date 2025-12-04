@@ -291,6 +291,9 @@ section:hover {
     .transcript {
         width: 100%;
     }
+   .site-footer {
+        font-size: 0.9rem;        
+    }
 }
 
 .back-top-fancy {
@@ -552,7 +555,6 @@ button:hover {
 ------------------------------ */
 
 .site-footer {
-   display: flex;
     text-align: center;
     padding: 1.2rem;
     margin-top: 2rem;
@@ -615,4 +617,5 @@ button:hover {
     grid-template-columns: 320px 1fr;
   }
 }
+
 
